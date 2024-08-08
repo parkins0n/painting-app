@@ -1,0 +1,7 @@
+<div *ngFor="let painting of paintings">
+  <h2>{{ painting.title }}</h2>
+  <p><strong>Year:</strong> {{ painting.year | yearFormat }}</p>
+  <p><strong>Artist:</strong> {{ painting.artist | authorFormat }}</p>
+  <p><strong>Dimensions:</strong> {{ painting.dimensions | sizeFormat }}</p>
+  <p><strong>Location:</strong> {{ painting.location }}</p>
+</div>
